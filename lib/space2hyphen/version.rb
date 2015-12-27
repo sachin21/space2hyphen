@@ -2,5 +2,5 @@
 
 # This module holds the Space2hyphen version information.
 module Space2hyphen
-  VERSION = '0.0.0'
+  VERSION = '0.0.1'
 end
