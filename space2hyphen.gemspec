@@ -28,12 +28,12 @@ Gem::Specification.new do |spec|
 
     From the command line:
 
-    $ space2hyphen new branch -c
+    $ s2h new branch -c
     =>  Switched to the new branch 'new-branch’
 
     Or
 
-    $ git branch -m $(space2hyphen renamed branch)
+    $ git branch -m $(s2h renamed branch)
 
     ----------------------------------------------------------
     ..........................................................
