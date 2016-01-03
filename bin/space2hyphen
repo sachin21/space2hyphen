@@ -8,15 +8,12 @@ CREATE_FLAGS = %w(-c --create)
 args = ARGV.reject { |arg| CREATE_FLAGS.include?(arg) }
 hyphen_include_sentence = Space2hyphen.convert(args)
 
-result =
+if ARGV.empty?
+  puts Space2hyphen.usage
+else
   if ARGV.include?('-c') || ARGV.include?('--create')
-    if Space2hyphen.create_new_branch(hyphen_include_sentence)
-      "Switched to a new branch '#{hyphen_include_sentence}'"
-    else
-      "fatal: A branch named '#{hyphen_include_sentence}' already exists."
-    end
+    Space2hyphen.create_new_branch(hyphen_include_sentence)
   else
-    hyphen_include_sentence
+    puts hyphen_include_sentence
   end
-
-puts result
+end

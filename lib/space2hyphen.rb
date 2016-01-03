@@ -9,6 +9,6 @@ module Space2hyphen
   end
 
   def self.create_new_branch(hyphen_include_sentence)
-    system "git checkout -b #{hyphen_include_sentence} &> /dev/null"
+    system "git checkout -b #{hyphen_include_sentence}"
   end
 end
