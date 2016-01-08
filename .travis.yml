@@ -13,6 +13,9 @@ rvm:
   - 1.9.3-p484
   - 1.9.3-p545
 
+before_install:
+  - gem install bundler
+
 script: "bundle exec rspec spec"
 
 notifications:
