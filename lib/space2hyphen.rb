@@ -1,5 +1,3 @@
-# coding: utf-8
-
 require 'space2hyphen/version'
 
 # This is the main functions.

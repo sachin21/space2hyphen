@@ -1,5 +1,3 @@
-# coding: utf-8
-
 require 'bundler/setup'
 require 'space2hyphen'
 Bundler.setup

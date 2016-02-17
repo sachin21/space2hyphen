@@ -1,6 +1,4 @@
 #!/usr/bin/env ruby
-# coding: utf-8
-
 require 'space2hyphen'
 
 CREATE_FLAGS = %w(-c --create)
