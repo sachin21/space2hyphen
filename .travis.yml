@@ -9,6 +9,7 @@ rvm:
 
 before_install:
   - gem install bundler
+  - rm -f .git/index.lock
 
 script: "bundle exec rspec spec"
 
